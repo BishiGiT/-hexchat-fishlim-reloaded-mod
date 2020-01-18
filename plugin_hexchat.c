@@ -235,8 +235,8 @@ static int handle_outgoing(char *word[], char *word_eol[], void *userdata) {
     /* Get prefix for own nick if any */
     prefix = get_my_own_prefix();
 
-    /* Add encrypted flag */
-    message = g_strconcat("[", fish_modes[mode], "] ", word_eol[1], NULL);
+    /* dont add the encrypted flag */
+    message = word_eol[1];
 
     /* Display message */
     hexchat_emit_print(ph, "Your Message", hexchat_get_info(ph, "nick"), message, prefix, NULL);
