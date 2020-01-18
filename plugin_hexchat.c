@@ -158,8 +158,8 @@ char *decrypt_raw_message(const char *message, const char *key) {
             /* Length ALWAYS will be less that original message
              * add '[CBC] ' length */
             /* Modded cause i dont want the CBC/ECB in front of any message
-            message_decrypted = g_string_sized_new(strlen(message) + 6); '/
-            message_decrypted = g_string_sized_new(strlen(message));
+            message_decrypted = g_string_sized_new(strlen(message) + 6); */
+            message_decrypted = g_string_sized_new(strlen(message)); 
 
             /* Left part of message */
             left = g_strndup(message, start - message);
