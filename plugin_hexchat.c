@@ -236,7 +236,7 @@ static int handle_outgoing(char *word[], char *word_eol[], void *userdata) {
     prefix = get_my_own_prefix();
 
     /* dont add the encrypted flag */
-    message = word_eol[1];
+    message = g_strconcat(word_eol[1], NULL);
 
     /* Display message */
     hexchat_emit_print(ph, "Your Message", hexchat_get_info(ph, "nick"), message, prefix, NULL);
