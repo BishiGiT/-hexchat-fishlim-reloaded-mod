@@ -1,9 +1,7 @@
-HexChat FiSHLiM Reloaded
-========================
+HexChat FiSHLiM Reloaded - MOD
+==============================
 
-Adds FiSHLiM support to HexChat with with steroids!
-
-Based on FiSHLiM plugin of HexChat.
+Based on FiSHLiM plugin of BakasuraRCE. I have only modded the plugin_hexchat.h to remove encrypted flag for incoming and outgoing messages. If you want this in your irc-client use the original hexchat-fishlim-reloaded
 
 Installation
 ------------
@@ -34,10 +32,6 @@ ninja -C builddir
 sudo ninja -C builddir install
 ```
 
-### AUR
-
-We offer AUR repo: https://aur.archlinux.org/packages/hexchat-fishlim-reloaded-git/
-
 Features
 --------
 
@@ -45,7 +39,6 @@ Features
 - CBC mode on SETKEY and KEYX commands
 - Store keys in CBC mode (addon_fishlim.conf)
 - Detect context in DELKEY command
-- Encrypted flag for incoming and outgoing messages
 
 Usage
 -----
@@ -54,8 +47,3 @@ Usage
   - for CBC mode -> /setkey cbc:key
   - for ECB mode -> /setkey ecb:key
   - for ECB mode -> /setkey key
-
-Part of HexChat
----------------
-
-This project is intended to provide users with the new features until they are merged into the HexChat core: https://github.com/hexchat/hexchat/pull/2347
