@@ -1,7 +1,7 @@
 HexChat FiSHLiM Reloaded - MOD
 ==============================
 
-Based on FiSHLiM plugin of BakasuraRCE (very big thanks to him!). I have only modded the plugin_hexchat.h to remove encrypted flag for incoming and outgoing messages. If you want this in your irc-client use the original hexchat-fishlim-reloaded
+Based on FiSHLiM plugin of BakasuraRCE (very big thanks to him!). I have only modded the plugin_hexchat.c to remove encrypted flag for incoming and outgoing messages. If you want this in your irc-client use the original hexchat-fishlim-reloaded
 
 Installation
 ------------
